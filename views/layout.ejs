@@ -4,6 +4,8 @@
             <%= title %>
         </title>
         <link rel="stylesheet" href="/css/layout.css">
+        <link rel="stylesheet" href="/css/header.css">
+        <link rel="stylesheet" href="/css/footer.css">
         
         <%- style %>
 
@@ -12,7 +14,7 @@
     <body>
         <%-include('_header');-%>
         
-        <%- body %>
+        <div id="middle"><%- body %></div>
 
 
 

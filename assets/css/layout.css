@@ -1,4 +1,12 @@
-body{
-    margin: 0;
+body {
+  margin: 0;
+  text-align: center;
+  display: flex;
+  flex-direction: column; }
+  body #middle {
     text-align: center;
-}
+    border: 2px black solid;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    height: auto; }

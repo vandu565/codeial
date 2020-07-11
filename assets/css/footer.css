@@ -1,0 +1,20 @@
+footer {
+  display: flex;
+  position: relative;
+  align-items: center;
+  top: 75%;
+  height: 50px;
+  background-color: #615e5e; }
+  footer #signs {
+    color: white;
+    margin-left: 3px;
+    font-family: sans-serif; }
+  footer ul {
+    text-decoration: none;
+    text-decoration-style: none; }
+    footer ul li {
+      text-decoration: none; }
+      footer ul li a {
+        color: white;
+        text-decoration: none;
+        font-family: sans-serif; }

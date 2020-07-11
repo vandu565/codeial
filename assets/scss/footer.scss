@@ -1,0 +1,27 @@
+footer{
+    display: flex;
+    position: relative;
+    align-items: center;
+    top:75%;
+    height: 50px;
+    background-color: rgb(97, 94, 94);
+    #signs{
+        color: white;
+        margin-left: 3px;
+        font-family: sans-serif;
+    }
+    ul{
+        text-decoration: none;
+        text-decoration-style: none;
+        li{
+            text-decoration: none;
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: sans-serif;
+                
+                
+            }
+        }
+    }
+}

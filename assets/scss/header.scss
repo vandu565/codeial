@@ -1,0 +1,25 @@
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    background-color: blue($color: #3f0cf5);
+    #sign{
+        font-family: sans-serif;
+        color: white;
+    }
+    ul{
+        display: inline;
+        text-decoration-style: none;
+        li{
+            display: inline;
+            text-decoration: none;
+            margin-left: 5px;
+            a{
+                color: white;
+                text-decoration: none;
+                font-family: sans-serif;
+            }
+        }
+    }
+}
