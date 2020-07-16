@@ -11,7 +11,8 @@ footer {
     font-family: sans-serif; }
   footer ul {
     text-decoration: none;
-    text-decoration-style: none; }
+    text-decoration-style: none;
+    list-style-type: none; }
     footer ul li {
       text-decoration: none; }
       footer ul li a {
