@@ -9,6 +9,8 @@ const session = require('express-session');
 const passport = require('./config/passport-local-strategy');
 const mongoStore = require('connect-mongo')(session);
 const sassMidddleware=require('node-sass-middleware');
+const flash=require('connect-flash');
+const customMware=require('./config/middleware');
 
 
 
@@ -58,7 +60,9 @@ app.use(passport.initialize());
 app.use(passport.session());
 
 app.use(passport.setAuthenticatedUser);
-
+//after seesion cookie
+app.use(flash());
+app.use(customMware.setFlash);
 
 
 //use expres router
