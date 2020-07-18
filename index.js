@@ -29,9 +29,11 @@ app.use(express.static('./assets'));
 //using express layouts, define before routes
 const expressLayouts=require('express-ejs-layouts');
 app.use(expressLayouts);
-//extract style ans scripts from sub pages into th layout
+//extract style ans scripts from sub pages into the layout
 app.set('layout extractStyles' , true);
-app.set('layout extractScripts' , true);
+
+app.set('layout extractScripts', true);
+
 
 
 
