@@ -7,6 +7,9 @@ const db=require('./config/mongoose');
 const session = require('express-session');
 //const passport = require('passport');
 const passport = require('./config/passport-local-strategy');
+const passportJwt = require('./config/passport-jwt-strategy');
+const passportGoogle=require('./config/passport-google-oauth2-strategy');
+
 const mongoStore = require('connect-mongo')(session);
 const sassMidddleware=require('node-sass-middleware');
 const flash=require('connect-flash');
@@ -26,6 +29,8 @@ app.use(express.urlencoded());
 app.use(cookieParser());
 
 app.use(express.static('./assets'));
+//make upload path avilable to browser
+app.use('/uploads',express.static(__dirname+'/uploads'));
 //using express layouts, define before routes
 const expressLayouts=require('express-ejs-layouts');
 app.use(expressLayouts);
